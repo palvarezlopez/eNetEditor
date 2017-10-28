@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <input>
+        <net-file value="C:/Proyectos/eNetEditor/eNetEditor/bin/projects/netConvert/project.netConvert.net.xml"/>
+        <route-files value="C:/Proyectos/eNetEditor/eNetEditor/bin/projects/project.routes.xml C:/Proyectos/eNetEditor/eNetEditor/bin/projects/project.vehicleTypes.xml C:/Proyectos/eNetEditor/eNetEditor/bin/projects/project.vehicles.xml C:/Proyectos/eNetEditor/eNetEditor/bin/projects/project.flows.xml"/>
+        <additional-files value="C:/Proyectos/eNetEditor/eNetEditor/bin/projects/project.busStops.xml C:/Proyectos/eNetEditor/eNetEditor/bin/projects/project.chargingStations.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="86400"/>
+    </time>
+    <output>
+        <tripinfo-output value="tripinfo.xml"/>
+        <battery-output value="battery.xml"/>
+    </output>
+</configuration>

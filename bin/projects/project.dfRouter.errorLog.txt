@@ -1,0 +1,2 @@
+Error: Unknown lane '8to9_6' for detector 'detectorE1_0_8to9_6' in 'C:/Proyectos/eNetEditor/eNetEditor/bin/projects/project.detectorDefinitions.xml'.
+Quitting (on error).

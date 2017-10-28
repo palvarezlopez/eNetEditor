@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 09/22/15 22:22:03 by SUMO gui Version 0.21.0
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo-sim.org/xsd/sumo-gui.exeConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Proyectos\eNetEditor\eNetEditor\bin\projects\project.net.xml"/>
+        <route-files value="C:\Proyectos\eNetEditor\eNetEditor\bin\projects\project.routes.xml,C:\Proyectos\eNetEditor\eNetEditor\bin\projects\project.vehicleTypes.xml,C:\Proyectos\eNetEditor\eNetEditor\bin\projects\project.vehicles.xml,C:\Proyectos\eNetEditor\eNetEditor\bin\projects\project.flows.xml"/>
+        <additional-files value="C:\Proyectos\eNetEditor\eNetEditor\bin\projects\project.busStops.xml,C:\Proyectos\eNetEditor\eNetEditor\bin\projects\project.chargingStations.xml"/>
+    </input>
+
+    <output>
+        <battery-output value="C:\Proyectos\eNetEditor\eNetEditor\bin\projects\project.battery-output.xml"/>
+        <tripinfo-output value="C:\Proyectos\eNetEditor\eNetEditor\bin\projects\project.tripinfo.xml"/>
+        <save-state.prefix value="C:\Proyectos\eNetEditor\eNetEditor\bin\projects\state"/>
+    </output>
+
+    <time>
+        <begin value="000"/>
+        <end value="6000"/>
+    </time>
+
+    <emissions>
+        <phemlight-path value="C:\Proyectos\eNetEditor\eNetEditor\bin\projects\./PHEMlight/"/>
+    </emissions>
+
+</configuration>
+-->
+
+<tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo-sim.org/xsd/tripinfo_file.xsd">
+</tripinfos>

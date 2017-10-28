@@ -1,0 +1,59 @@
+<project imagePath="C:/Proyectos/eNetEditor/eNetEditor/bin/projects/tmp.jpg" timeStart="0" projectName="project" path="C:/Proyectos/eNetEditor/eNetEditor/bin/projects" scale="17" timeEnd="86400">
+ <nodeTable>
+  <node extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="0"/>
+  <node extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="1"/>
+  <node extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="2"/>
+  <node extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="3"/>
+  <node extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="4"/>
+ </nodeTable>
+ <edgeTable>
+  <edge extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="0to1"/>
+  <edge extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="1to0"/>
+  <edge extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="1to2"/>
+  <edge extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="2to1"/>
+  <edge extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="2to3"/>
+  <edge extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="3to2"/>
+  <edge extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="3to4"/>
+  <edge extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="4to3"/>
+ </edgeTable>
+ <laneTable>
+  <lane extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="0to1_0"/>
+  <lane extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="1to0_0"/>
+  <lane extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="1to2_0"/>
+  <lane extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="2to1_0"/>
+  <lane extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="2to3_0"/>
+  <lane extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="3to2_0"/>
+  <lane extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="3to4_0"/>
+  <lane extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="4to3_0"/>
+ </laneTable>
+ <connectionTable/>
+ <prohibitionTable/>
+ <routeTable/>
+ <trafficLightTable/>
+ <busStopTable/>
+ <chargingStationTable/>
+ <vehicleTypeTable>
+  <vehicleType extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="PKW"/>
+  <vehicleType extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="LKW"/>
+ </vehicleTypeTable>
+ <flowTable/>
+ <vehicleTable/>
+ <edgeTypeTable/>
+ <E1Table/>
+ <E2Table/>
+ <E3Table/>
+ <flowMeasureTable/>
+ <distributionFunctionTable>
+  <distributionFunction extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="distributionF_0to1"/>
+  <distributionFunction extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="distributionF_1to0"/>
+  <distributionFunction extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="distributionF_1to2"/>
+  <distributionFunction extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="distributionF_2to1"/>
+  <distributionFunction extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="distributionF_2to3"/>
+  <distributionFunction extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="distributionF_3to2"/>
+  <distributionFunction extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="distributionF_3to4"/>
+  <distributionFunction extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="distributionF_4to3"/>
+  <distributionFunction extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="distributionF_4to5"/>
+  <distributionFunction extraParameter3Name="" extraParameter2Name="" extraParameter3Value="" extraParameter1Value="" extraParameter1Name="" extraParameter2Value="" id="distributionF_5to4"/>
+ </distributionFunctionTable>
+ <turnRatioTable/>
+</project>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 11/16/15 16:49:42 by SUMO gui Version 0.21.0
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo-sim.org/xsd/sumo-gui.exeConfiguration.xsd">
+
+    <input>
+        <net-file value="C:/Proyectos/eNetEditor/eNetEditor/bin/projects/netConvert/project.netConvert.net.xml"/>
+        <route-files value="C:/Proyectos/eNetEditor/eNetEditor/bin/projects/project.routes.xml,C:/Proyectos/eNetEditor/eNetEditor/bin/projects/project.vehicleTypes.xml,C:/Proyectos/eNetEditor/eNetEditor/bin/projects/project.vehicles.xml,C:/Proyectos/eNetEditor/eNetEditor/bin/projects/project.flows.xml"/>
+        <additional-files value="C:/Proyectos/eNetEditor/eNetEditor/bin/projects/project.busStops.xml,C:/Proyectos/eNetEditor/eNetEditor/bin/projects/project.chargingStations.xml"/>
+    </input>
+
+    <output>
+        <battery-output value="C:\Proyectos\eNetEditor\eNetEditor\bin\projects\netConvert\battery.xml"/>
+        <tripinfo-output value="C:\Proyectos\eNetEditor\eNetEditor\bin\projects\netConvert\tripinfo.xml"/>
+        <save-state.prefix value="C:\Proyectos\eNetEditor\eNetEditor\bin\projects\netConvert\state"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="86400"/>
+    </time>
+
+    <emissions>
+        <phemlight-path value="C:\Proyectos\eNetEditor\eNetEditor\bin\projects\netConvert\./PHEMlight/"/>
+    </emissions>
+
+</configuration>
+-->
+
+<battery-export>
+</battery-export>

@@ -1,0 +1,32 @@
+<edges>
+ <edge length="55.929" endOffset="-1" sidewalkWidth="0" shape="" priority="1" id="0to1" from="0" to="1" numLanes="1" speed="50" spreadType="right">
+  <lane index="0" width="3" allow="bicycle moped motorcycle private hov evehicle passenger coach bus delivery truck trailer taxi emergency army" speed="50"/>
+ </edge>
+ <edge length="55.929" endOffset="-1" sidewalkWidth="0" shape="" priority="1" id="1to0" from="1" to="0" numLanes="1" speed="50" spreadType="right">
+  <lane index="0" width="3" allow="bicycle moped motorcycle private hov evehicle passenger coach bus delivery truck trailer taxi emergency army" speed="50"/>
+ </edge>
+ <edge length="64.7095" endOffset="-1" sidewalkWidth="0" shape="" priority="1" id="1to2" from="1" to="2" numLanes="1" speed="50" spreadType="right">
+  <lane index="0" width="3" allow="bicycle moped motorcycle private hov evehicle passenger coach bus delivery truck trailer taxi emergency army" speed="50"/>
+ </edge>
+ <edge length="64.7095" endOffset="-1" sidewalkWidth="0" shape="" priority="1" id="2to1" from="2" to="1" numLanes="1" speed="50" spreadType="right">
+  <lane index="0" width="3" allow="bicycle moped motorcycle private hov evehicle passenger coach bus delivery truck trailer taxi emergency army" speed="50"/>
+ </edge>
+ <edge length="90.025" endOffset="-1" sidewalkWidth="0" shape="" priority="1" id="2to3" from="2" to="3" numLanes="1" speed="50" spreadType="right">
+  <lane index="0" width="3" allow="bicycle moped motorcycle private hov evehicle passenger coach bus delivery truck trailer taxi emergency army" speed="50"/>
+ </edge>
+ <edge length="90.025" endOffset="-1" sidewalkWidth="0" shape="" priority="1" id="3to2" from="3" to="2" numLanes="1" speed="50" spreadType="right">
+  <lane index="0" width="3" allow="bicycle moped motorcycle private hov evehicle passenger coach bus delivery truck trailer taxi emergency army" speed="50"/>
+ </edge>
+ <edge length="17.3345" endOffset="-1" sidewalkWidth="0" shape="" priority="1" id="3to4" from="3" to="4" numLanes="1" speed="50" spreadType="right">
+  <lane index="0" width="3" allow="bicycle moped motorcycle private hov evehicle passenger coach bus delivery truck trailer taxi emergency army" speed="50"/>
+ </edge>
+ <edge length="17.3345" endOffset="-1" sidewalkWidth="0" shape="" priority="1" id="4to3" from="4" to="3" numLanes="1" speed="50" spreadType="right">
+  <lane index="0" width="3" allow="bicycle moped motorcycle private hov evehicle passenger coach bus delivery truck trailer taxi emergency army" speed="50"/>
+ </edge>
+ <edge length="3.34808" endOffset="-1" sidewalkWidth="0" shape="" priority="1" id="4to5" from="4" to="5" numLanes="1" speed="50" spreadType="right">
+  <lane index="0" width="3" allow="bicycle moped motorcycle private hov evehicle passenger coach bus delivery truck trailer taxi emergency army" speed="50"/>
+ </edge>
+ <edge length="3.34808" endOffset="-1" sidewalkWidth="0" shape="" priority="1" id="5to4" from="5" to="4" numLanes="1" speed="50" spreadType="right">
+  <lane index="0" width="3" allow="bicycle moped motorcycle private hov evehicle passenger coach bus delivery truck trailer taxi emergency army" speed="50"/>
+ </edge>
+</edges>

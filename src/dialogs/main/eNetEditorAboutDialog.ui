@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>eNetEditorAboutDialog</class>
+ <widget class="QDialog" name="eNetEditorAboutDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>576</width>
+    <height>229</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>576</width>
+    <height>229</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>576</width>
+    <height>229</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>About</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../../resources/eNetEditorResources.qrc">
+    <normaloff>:/main/eNetEditorLogo.png</normaloff>:/main/eNetEditorLogo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QHBoxLayout" name="Layout1">
+     <item>
+      <widget class="QLabel" name="LabelLogo">
+       <property name="minimumSize">
+        <size>
+         <width>300</width>
+         <height>151</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>151</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/logos/logo.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="LabelInformation">
+       <property name="minimumSize">
+        <size>
+         <width>250</width>
+         <height>151</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>250</width>
+         <height>151</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;eNetEditor&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Arial'; font-size:13px; color:#000000;&quot;&gt;Editor for SUMO Traffic Simulator&lt;br/&gt;&lt;br/&gt;Institute for Traffic Safety and &lt;br/&gt;Automation Engineering&lt;br/&gt;NFF TU Braunschweig&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="Layout2">
+     <item>
+      <widget class="QLabel" name="LabelAuthors">
+       <property name="minimumSize">
+        <size>
+         <width>400</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>400</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial'; font-size:13px; color:#000000;&quot;&gt;Original idea: Tamás Kurczveil&lt;/span&gt;&lt;span style=&quot; font-family:'Arial'; font-size:13px; color:#ffffff;&quot;&gt;________&lt;/span&gt;&lt;span style=&quot; font-family:'Arial'; font-size:13px; color:#000000;&quot;&gt;kurczveil@iva.ing.tu-bs.de&lt;br/&gt;&lt;br/&gt;Implementation: Pablo Álvarez López&lt;/span&gt;&lt;span style=&quot; font-family:'Arial'; font-size:13px; color:#ffffff;&quot;&gt;__&lt;/span&gt;&lt;span style=&quot; font-family:'Arial'; font-size:13px; color:#000000;&quot;&gt;p.alvarez-lopez@tu-bs.de&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+       </property>
+       <property name="textInteractionFlags">
+        <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="LayoutExternButtons">
+       <item>
+        <spacer name="HorizontalSpacer1">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="LayoutButton">
+         <item>
+          <widget class="QPushButton" name="ButtonAccept">
+           <property name="minimumSize">
+            <size>
+             <width>75</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>75</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Accept</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../resources/eNetEditorResources.qrc">
+             <normaloff>:/main/accept.ico</normaloff>:/main/accept.ico</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="HorizontalSpacer2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../../resources/eNetEditorResources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 09/29/15 11:48:56 by SUMO dfrouter Version 0.21.0
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo-sim.org/xsd/dfrouterConfiguration.xsd">
+
+    <input>
+        <net-file value="C:/Proyectos/eNetEditor/eNetEditor/bin/projects/netConvert/project.netConvert.net.xml"/>
+        <detector-files value="C:/Proyectos/eNetEditor/eNetEditor/bin/projects/project.detectorDefinitions.xml"/>
+        <measure-files value="C:/Proyectos/eNetEditor/eNetEditor/bin/projects/project.flowMeasures.csv"/>
+    </input>
+
+    <output>
+        <routes-output value="C:/Proyectos/eNetEditor/eNetEditor/bin/projects/dfRouter/project.dfRouter.routes.xml."/>
+        <routes-for-all value="false"/>
+        <detector-output value="C:/Proyectos/eNetEditor/eNetEditor/bin/projects/dfRouter/project.dfRouter.detectors.xml."/>
+        <detectors-poi-output value="C:/Proyectos/eNetEditor/eNetEditor/bin/projects/dfRouter/project.dfRouter.poi.xml."/>
+        <emitters-output value="C:/Proyectos/eNetEditor/eNetEditor/bin/projects/dfRouter/project.dfRouter.emitters.xml."/>
+        <vtype value="false"/>
+        <emitters-poi-output value="C:/Proyectos/eNetEditor/eNetEditor/bin/projects/dfRouter/project.dfRouter.emitters.poi.xml."/>
+        <variable-speed-sign-output value="C:/Proyectos/eNetEditor/eNetEditor/bin/projects/dfRouter/project.dfRouter.speedSign.xml."/>
+        <end-reroute-output value="C:/Proyectos/eNetEditor/eNetEditor/bin/projects/dfRouter/project.dfRoute.rerouters.xml."/>
+        <validation-output value="C:/Proyectos/eNetEditor/eNetEditor/bin/projects/dfRouter/project.dfRouter.validation.xml."/>
+        <validation-output.add-sources value="false"/>
+    </output>
+
+    <processing>
+        <guess-empty-flows value="false"/>
+        <highway-mode value="false"/>
+        <ignore-invalid-detectors value="false"/>
+        <revalidate-detectors value="false"/>
+        <revalidate-routes value="false"/>
+        <keep-unfinished-routes value="false"/>
+        <keep-longer-routes value="false"/>
+        <max-search-depth value="30"/>
+        <emissions-only value="false"/>
+        <keep-turnarounds value="false"/>
+        <min-route-length value="-1"/>
+        <time-factor value="60"/>
+        <time-offset value="0"/>
+        <time-step value="3600"/>
+        <calibrator-output value="false"/>
+        <include-unused-routes value="false"/>
+        <revalidate-flows value="false"/>
+        <remove-empty-detectors value="false"/>
+        <strict-sources value="true"/>
+        <respect-concurrent-inflows value="false"/>
+        <scale value="1"/>
+    </processing>
+
+    <report>
+        <verbose value="false"/>
+        <print-options value="false"/>
+        <help value="false"/>
+        <version value="false"/>
+        <xml-validation value="auto"/>
+        <xml-validation.net value="never"/>
+        <no-warnings value="false"/>
+        <log value="C:/Proyectos/eNetEditor/eNetEditor/bin/projects/project.dfRouter.log.txt"/>
+        <message-log value="C:/Proyectos/eNetEditor/eNetEditor/bin/projects/project.dfRouter.messageLog.txt"/>
+        <error-log value="C:/Proyectos/eNetEditor/eNetEditor/bin/projects/project.dfRouter.errorLog.txt"/>
+        <report-empty-detectors value="false"/>
+        <print-absolute-flows value="false"/>
+        <no-step-log value="false"/>
+    </report>
+
+    <random_number>
+        <random value="false"/>
+        <seed value="23423"/>
+    </random_number>
+
+</configuration>
+-->
+
+<vss>
+    <step time="0.00" speed="1.39"/>
+    <step time="3600.00" speed="1.39"/>
+    <step time="7200.00" speed="1.39"/>
+    <step time="10800.00" speed="1.39"/>
+    <step time="14400.00" speed="1.39"/>
+    <step time="18000.00" speed="1.39"/>
+    <step time="21600.00" speed="1.39"/>
+    <step time="25200.00" speed="1.39"/>
+    <step time="28800.00" speed="1.39"/>
+    <step time="32400.00" speed="1.39"/>
+    <step time="36000.00" speed="1.39"/>
+    <step time="39600.00" speed="1.39"/>
+    <step time="43200.00" speed="1.39"/>
+    <step time="46800.00" speed="1.39"/>
+    <step time="50400.00" speed="1.39"/>
+    <step time="54000.00" speed="1.39"/>
+    <step time="57600.00" speed="1.39"/>
+    <step time="61200.00" speed="1.39"/>
+    <step time="64800.00" speed="1.39"/>
+    <step time="68400.00" speed="1.39"/>
+    <step time="72000.00" speed="1.39"/>
+    <step time="75600.00" speed="1.39"/>
+    <step time="79200.00" speed="1.39"/>
+    <step time="82800.00" speed="1.39"/>
+</vss>

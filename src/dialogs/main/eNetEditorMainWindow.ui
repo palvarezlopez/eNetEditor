@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>eNetEditorMainWindow</class>
+ <widget class="QMainWindow" name="eNetEditorMainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string> eNetEditor</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../../resources/eNetEditorResources.qrc">
+    <normaloff>:/main/eNetEditorLogo.png</normaloff>:/main/eNetEditorLogo.png</iconset>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>24</width>
+    <height>24</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="CentralLayout">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="GraphicsViewLayout">
+      <item>
+       <widget class="QGraphicsView" name="TemporalGraphicsView">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QTextBrowser" name="Console">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Consolas&quot;;</string>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Consolas'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:8.25pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="Line" name="HorizontalLine">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+   <zorder></zorder>
+   <zorder>HorizontalLine</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>900</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="ActionNewNetEditorProject"/>
+    <addaction name="ActionOpenNetEditorProject"/>
+    <addaction name="ActionSaveNetEditorProject"/>
+    <addaction name="ActionSaveNetEditorProjectAs"/>
+    <addaction name="ActionCloseProject"/>
+    <addaction name="separator"/>
+    <addaction name="ActionImport"/>
+    <addaction name="ActionPreferences"/>
+    <addaction name="separator"/>
+    <addaction name="ActionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="ActionUndo"/>
+    <addaction name="separator"/>
+    <addaction name="ActionAddorRemoveNodeOrEdgeOrLane"/>
+    <addaction name="ActionAddOrRemoveConnection"/>
+    <addaction name="ActionAddOrRemoveProhibition"/>
+    <addaction name="ActionAddOrRemoveTrafficLight"/>
+    <addaction name="ActionAddOrRemoveBusStop"/>
+    <addaction name="ActionAddOrRemoveChargingStation"/>
+    <addaction name="ActionEditFlows"/>
+    <addaction name="separator"/>
+    <addaction name="ActionEditVehicleTypes"/>
+    <addaction name="ActionEditTrafficLights"/>
+    <addaction name="ActionEditEdgeTypes"/>
+    <addaction name="separator"/>
+    <addaction name="ActionShowTag"/>
+    <addaction name="ActionShowSignals"/>
+    <addaction name="separator"/>
+    <addaction name="ActionShowStatistics"/>
+    <addaction name="ActionScalaPreferences"/>
+    <addaction name="ActionProjectPreferences"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="ActionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="ActionExecuteNetConvert"/>
+    <addaction name="ActionExecuteDfRouter"/>
+    <addaction name="ActionExecuteDuaRouter"/>
+    <addaction name="ActionExecuteJtrRouter"/>
+    <addaction name="ActionExecuteCadyts"/>
+    <addaction name="ActionExecuteNetGenerator"/>
+    <addaction name="ActionExecuteSumoSimulator"/>
+   </widget>
+   <widget class="QMenu" name="menuPlugings">
+    <property name="title">
+     <string>Plugings</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuPlugings"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="toolBarBottom">
+   <property name="windowTitle">
+    <string>statusBar</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::AllToolBarAreas</set>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>BottomToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="ActionConsole"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QToolBar" name="toolBarTop">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="ActionNewNetEditorProject"/>
+   <addaction name="ActionOpenNetEditorProject"/>
+   <addaction name="ActionSaveNetEditorProject"/>
+   <addaction name="ActionSaveNetEditorProjectAs"/>
+   <addaction name="separator"/>
+   <addaction name="ActionAddorRemoveNodeOrEdgeOrLane"/>
+   <addaction name="ActionAddOrRemoveConnection"/>
+   <addaction name="ActionAddOrRemoveProhibition"/>
+   <addaction name="ActionAddOrRemoveTrafficLight"/>
+   <addaction name="ActionAddOrRemoveRoute"/>
+   <addaction name="ActionAddOrRemoveDetector"/>
+   <addaction name="ActionAddOrRemoveBusStop"/>
+   <addaction name="ActionAddOrRemoveChargingStation"/>
+   <addaction name="separator"/>
+   <addaction name="ActionEditTrafficLights"/>
+   <addaction name="ActionEditEdgeTypes"/>
+   <addaction name="ActionEditVehicleTypes"/>
+   <addaction name="ActionEditVehicles"/>
+   <addaction name="ActionEditFlows"/>
+   <addaction name="separator"/>
+   <addaction name="ActionShowTag"/>
+   <addaction name="ActionShowSignals"/>
+   <addaction name="separator"/>
+   <addaction name="ActionProjectPreferences"/>
+  </widget>
+  <action name="ActionAbout">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/main/about.ico</normaloff>:/main/about.ico</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="ActionAddorRemoveNodeOrEdgeOrLane">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/items/node.png</normaloff>:/items/node.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add or remove node, edge or lane</string>
+   </property>
+   <property name="toolTip">
+    <string>Add or remove nodes in the scene, or edges and lanes between two nodes</string>
+   </property>
+  </action>
+  <action name="ActionAddOrRemoveConnection">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/items/connection.png</normaloff>:/items/connection.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add or remove connection</string>
+   </property>
+   <property name="toolTip">
+    <string>Add or remove connection between two consecutive lanes</string>
+   </property>
+  </action>
+  <action name="ActionAddOrRemoveTrafficLight">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/items/trafficLight.png</normaloff>
+     <normalon>:/Semaphore.png</normalon>:/items/trafficLight.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add or remove Traffic Light</string>
+   </property>
+   <property name="toolTip">
+    <string>Change node to traffic light and viceversa</string>
+   </property>
+  </action>
+  <action name="ActionNewNetEditorProject">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/main/newProject.ico</normaloff>:/main/newProject.ico</iconset>
+   </property>
+   <property name="text">
+    <string>New Net Editor project</string>
+   </property>
+   <property name="toolTip">
+    <string>Create a new Net Editor Project</string>
+   </property>
+  </action>
+  <action name="ActionOpenNetEditorProject">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/main/openProject.ico</normaloff>:/main/openProject.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Open Net Editor Project</string>
+   </property>
+   <property name="toolTip">
+    <string>Open Net Editor Project</string>
+   </property>
+  </action>
+  <action name="ActionSaveNetEditorProject">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/main/save.ico</normaloff>:/main/save.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Save Net Editor Project</string>
+   </property>
+   <property name="toolTip">
+    <string>Save Net Editor Project</string>
+   </property>
+  </action>
+  <action name="ActionSaveNetEditorProjectAs">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/main/saveAs.ico</normaloff>:/main/saveAs.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Save Net Editor Project as</string>
+   </property>
+   <property name="toolTip">
+    <string>Save Net Editor Project as</string>
+   </property>
+  </action>
+  <action name="ActionScalaPreferences">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/main/scala.png</normaloff>:/main/scala.png</iconset>
+   </property>
+   <property name="text">
+    <string>Scala preferences</string>
+   </property>
+   <property name="toolTip">
+    <string>Scala preferences</string>
+   </property>
+  </action>
+  <action name="ActionProjectPreferences">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/main/compile.ico</normaloff>:/main/compile.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Project preferences</string>
+   </property>
+   <property name="toolTip">
+    <string>Edit project preferences</string>
+   </property>
+  </action>
+  <action name="ActionExit">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/main/exit.ico</normaloff>:/main/exit.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="ActionCloseProject">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/main/closeProject.ico</normaloff>:/main/closeProject.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Close project</string>
+   </property>
+   <property name="toolTip">
+    <string>Close actual project</string>
+   </property>
+  </action>
+  <action name="ActionPreferences">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/main/configure.ico</normaloff>:/main/configure.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Net Editor Preferences</string>
+   </property>
+   <property name="toolTip">
+    <string>Preferences of NetEditor</string>
+   </property>
+  </action>
+  <action name="ActionImport">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/main/Import.ico</normaloff>:/main/Import.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Import SUMO net</string>
+   </property>
+   <property name="toolTip">
+    <string>Import SUMO XML net</string>
+   </property>
+  </action>
+  <action name="ActionUndo">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/main/reset.ico</normaloff>:/main/reset.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+   <property name="toolTip">
+    <string>Undo last action</string>
+   </property>
+  </action>
+  <action name="ActionConsole">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/main/openConsole.ico</normaloff>:/main/openConsole.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Console</string>
+   </property>
+   <property name="toolTip">
+    <string>Open/close console</string>
+   </property>
+  </action>
+  <action name="ActionEditVehicleTypes">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/items/vehicleTypes/bus.png</normaloff>:/items/vehicleTypes/bus.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit vehicle types</string>
+   </property>
+   <property name="toolTip">
+    <string>Add or edit vehicle types</string>
+   </property>
+  </action>
+  <action name="ActionShowTag">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/main/tag.ico</normaloff>:/main/tag.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Show/hide tags</string>
+   </property>
+   <property name="toolTip">
+    <string>show/hide tags</string>
+   </property>
+  </action>
+  <action name="ActionShowSignals">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/items/trafficSigns/nodeAllwayStop.png</normaloff>:/items/trafficSigns/nodeAllwayStop.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show signals icons</string>
+   </property>
+   <property name="toolTip">
+    <string>Show/hide icons</string>
+   </property>
+  </action>
+  <action name="ActionAddOrRemoveBusStop">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/items/busStop.png</normaloff>:/items/busStop.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add or remove bus stop</string>
+   </property>
+   <property name="toolTip">
+    <string>Add or remove bus stop over a lane</string>
+   </property>
+  </action>
+  <action name="ActionAddOrRemoveChargingStation">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/items/chargingStation.png</normaloff>:/items/chargingStation.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add or remove charging station</string>
+   </property>
+   <property name="toolTip">
+    <string>Add or remove charging station over a lane</string>
+   </property>
+  </action>
+  <action name="ActionEditTrafficLights">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/items/trafficLight2.png</normaloff>:/items/trafficLight2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit traffic lights</string>
+   </property>
+   <property name="toolTip">
+    <string>Edit traffic lights of the scene</string>
+   </property>
+  </action>
+  <action name="ActionEditFlows">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/items/flow.png</normaloff>:/items/flow.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit Flows</string>
+   </property>
+   <property name="toolTip">
+    <string>Edit Flows</string>
+   </property>
+  </action>
+  <action name="ActionAddOrRemoveProhibition">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/items/prohibition.png</normaloff>:/items/prohibition.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add or remove prohibition</string>
+   </property>
+   <property name="toolTip">
+    <string>Add or remove prohibition between two consecutive edges</string>
+   </property>
+  </action>
+  <action name="ActionExecuteCadyts">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/tools/sumo.png</normaloff>:/tools/sumo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Execute Cadyts</string>
+   </property>
+   <property name="toolTip">
+    <string>Open dialog to configure and execute Cadyts</string>
+   </property>
+  </action>
+  <action name="ActionExecuteDfRouter">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/tools/sumo.png</normaloff>:/tools/sumo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Execute Df Router</string>
+   </property>
+   <property name="toolTip">
+    <string>Open dialog to configure and execute Df Router</string>
+   </property>
+  </action>
+  <action name="ActionExecuteDuaRouter">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/tools/sumo.png</normaloff>:/tools/sumo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Execute Dua Router</string>
+   </property>
+   <property name="toolTip">
+    <string>Open dialog to configure and execute Dua Router</string>
+   </property>
+  </action>
+  <action name="ActionExecuteNetConvert">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/tools/sumo.png</normaloff>:/tools/sumo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Execute Net Convert</string>
+   </property>
+   <property name="toolTip">
+    <string>Open dialog to configure and execute Net Convert</string>
+   </property>
+  </action>
+  <action name="ActionExecuteNetGenerator">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/tools/sumo.png</normaloff>:/tools/sumo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Execute Net Generate</string>
+   </property>
+   <property name="toolTip">
+    <string>Open dialog to configure and execute Net Generator</string>
+   </property>
+  </action>
+  <action name="ActionExecuteSumoSimulator">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/tools/sumo.png</normaloff>:/tools/sumo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Execute Sumo Simulator</string>
+   </property>
+   <property name="toolTip">
+    <string>Open dialog to configure and execute Sumo Simulator</string>
+   </property>
+  </action>
+  <action name="ActionExecuteJtrRouter">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/tools/sumo.png</normaloff>:/tools/sumo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Execute Jtr Router</string>
+   </property>
+   <property name="toolTip">
+    <string>Open dialog to configure and execute Jtr Router</string>
+   </property>
+  </action>
+  <action name="ActionAddOrRemoveRoute">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/items/route.png</normaloff>:/items/route.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add or remove route</string>
+   </property>
+   <property name="toolTip">
+    <string>Add or remove route between consecutive edges</string>
+   </property>
+  </action>
+  <action name="ActionEditEdgeTypes">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/items/edgeType.png</normaloff>:/items/edgeType.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit edge types</string>
+   </property>
+   <property name="toolTip">
+    <string>Add or edit edge types</string>
+   </property>
+  </action>
+  <action name="ActionShowStatistics">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/main/statistics.ico</normaloff>:/main/statistics.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Show statistics</string>
+   </property>
+   <property name="toolTip">
+    <string>Show statistics of the actual project</string>
+   </property>
+  </action>
+  <action name="ActionEditVehicles">
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/items/vehicleTypes/truck.png</normaloff>:/items/vehicleTypes/truck.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit Vehicles</string>
+   </property>
+   <property name="toolTip">
+    <string>Edit vehicles</string>
+   </property>
+  </action>
+  <action name="ActionAddOrRemoveDetector">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../../resources/eNetEditorResources.qrc">
+     <normaloff>:/items/detector.png</normaloff>:/items/detector.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add or remove detectors</string>
+   </property>
+   <property name="toolTip">
+    <string>Add or remove detectors over lanes</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../../../resources/eNetEditorResources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
